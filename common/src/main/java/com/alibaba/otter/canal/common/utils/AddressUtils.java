@@ -73,6 +73,6 @@ public class AddressUtils {
             logger.warn("Failed to retriving network card ip address. cause:" + e.getMessage());
         }
         logger.error("Could not get local host ip address, will use 127.0.0.1 instead.");
-        return localAddress;
+        return null;
     }
 }
